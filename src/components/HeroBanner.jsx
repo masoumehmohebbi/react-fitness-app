@@ -13,7 +13,6 @@ const HeroBanner = () => {
                    </div>
                 </div>
             </div>
-
            <div className='col-span-2 hidden lg:grid justify-end'>
                 <img src={HeroBannerImg} alt="banner" className='rounded-md overflow-auto' />
            </div>

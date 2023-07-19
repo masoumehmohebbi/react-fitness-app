@@ -88,7 +88,6 @@ const Class = () => {
                 <h4 className="text-slate-800 dark:text-slate-300 text-justify">
                 By hovering over each photo, you can read the details of each class and get answers to your questions.
                 </h4>
-                
            </div>
         </section>
      );

@@ -7,7 +7,7 @@ import Reasons from '../components/Reasons';
 const Home = () => {
     const [exercise , setExercise] = useState([])
     const [bodyPart, setBodypart] = useState('all')
-
+    
     return (
         <main className=''>
             <HeroBanner/>

@@ -15,5 +15,6 @@ const ExerciseCard = ({exercise}) => {
             </Link>
      );
 }
- 
+
+
 export default ExerciseCard;

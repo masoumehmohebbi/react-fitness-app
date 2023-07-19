@@ -4,7 +4,6 @@ import img3 from '../assets/images/fit-woman3.jpg'
 import img4 from '../assets/images/fit-woman4.jpg'
 
 import ArrowRight from '../assets/icons/Arrow-right.png'
-
 import Dumbell from '../assets/icons/dumbell.png'
 const Reasons = () => {
     return ( 

@@ -6,6 +6,7 @@ import darkLogo from '../assets/images/dark-logo.png'
 import {BiSun, BiMoon, BiLaptop} from "react-icons/bi";
 import { useEffect, useState } from "react";
 
+
 // eslint-disable-next-line react/prop-types
 const NavBar = ({theme , setTheme}) => {
 

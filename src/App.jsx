@@ -3,7 +3,6 @@ import Layout from './Layout/Layout'
 import routes from './routes'
 
 function App() {
-
   return (
     <div className='font-serif bg-[#fdf4ff] dark:bg-slate-800 duration-100 '>
       <Layout>

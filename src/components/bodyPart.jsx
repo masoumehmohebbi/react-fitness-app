@@ -9,7 +9,6 @@ const BodyPart = ({item, bodyPart , setBodypart}) => {
                 <img className='w-[40px] h-[40px]' src={Icon} alt="dumbble" />
                 <span className='font-bold capitalize mt-2 text-slate-800'>{item}</span>
             </button>
-        
      );
 }
  

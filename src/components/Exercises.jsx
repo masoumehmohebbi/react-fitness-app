@@ -34,5 +34,5 @@ const Exercises = ({exercise, setExercise, bodyPart}) => {
         </div>
     );
 }
- 
+
 export default Exercises;
