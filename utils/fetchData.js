@@ -9,7 +9,6 @@ export const exerciseOptions = {
       // 'X-RapidAPI-Key':  '125d34d4fcmsh6cb060fb9462e6ap13d2c6jsnb947a5fda3e9'
       // 'X-RapidAPI-Key':  'f6f1310788mshc1152382ad06a25p166e3ajsn83b903926726'
       'X-RapidAPI-Key':  ' bd9ec4b8bbmsh477922810441ea4p1c48bbjsn82f93792faeb'
-     
     }  
 };
 
