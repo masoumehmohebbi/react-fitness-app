@@ -34,7 +34,6 @@ const SearchExercises = ({setExercise, bodyPart, setBodypart}) => {
              console.log(error);
          }
         }
-
      }
 
     return ( 
