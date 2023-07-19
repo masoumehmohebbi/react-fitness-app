@@ -19,7 +19,6 @@ function LeftArrow() {
 
 function RightArrow() {
   const {scrollNext} = useContext(VisibilityContext);
-
   return (
     <button className="pr-5" onClick={() => scrollNext()}>
       <img src={RightArrowIcon} alt="left-arrow" />
