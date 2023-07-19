@@ -4,8 +4,20 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
+  
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary':'#06b6d4',
+        'secondary':'#c026d3'
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    // eslint-disable-next-line no-undef
+    require('tailwind-scrollbar')({ nocompatible: true }),
+    // eslint-disable-next-line no-undef
+    require('@tailwindcss/typography'),
+  ],
 }

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    [type='text'],
+    [type='email'],
+    textarea{
+        @apply duration-500 dark:text-slate-300 bg-transparent w-full p-2 border-2 border-primary focus:ring focus:ring-offset-2 ring-offset-[#fdf4ff] dark:ring-offset-slate-800 focus:ring-primary rounded-md outline-none;
+    }
+}
