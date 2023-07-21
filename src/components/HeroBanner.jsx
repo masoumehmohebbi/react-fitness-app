@@ -4,7 +4,7 @@ import { motion} from 'framer-motion';
 const HeroBanner = () => {  
  
     return ( 
-        <section className='grid grid-cols-4 w-full justify-between pb-5'>
+        <section className='grid grid-cols-4 w-full justify-between lg:pb-5 pt-5 lg:pt-0 pb-14'>
             <motion.div 
                 initial = {{y: '300px'}}
                 animate = {{y: '0'}}
@@ -13,7 +13,7 @@ const HeroBanner = () => {
                 <div className='flex items-center justify-center flex-col gap-y-7'>
                     <h1 className='font-black text-2xl sm:text-3xl text-primary'>Fitness Club</h1>
                     <h2 className='text-3xl sm:text-4xl font-black text-slate-800 dark:text-slate-300'>Sweat, Smile <br/> And Repeat</h2>
-                    <p className='text-center w-11/12 font-medium text-slate-800 dark:text-slate-300'>Check out the most effective exercises personalized to you</p>
+                    <p className='text-center w-11/12 font-medium text-slate-800 dark:text-slate-300 md:py-6 lg:py-0'>Check out the most effective exercises personalized to you</p>
                     <div className='relative w-full flex items-center justify-center text-center'>
                         <span className='hidden xl:block absolute mb-9 opacity-10 dark:opacity-20 text-7xl w-full text-secondary font-semibold'>Masoume App</span>
                         
@@ -40,7 +40,7 @@ const HeroBanner = () => {
            transition = {{ duration: 1.2}}
 
            className='col-span-2 hidden lg:grid justify-end'>
-                <img src={HeroBannerImg} alt="banner" className='rounded-md overflow-auto' />
+                <img src={HeroBannerImg} alt="banner" className='hidden lg:block rounded-md overflow-auto' />
            </motion.div>
 
         </section>

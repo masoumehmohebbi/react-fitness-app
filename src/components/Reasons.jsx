@@ -50,7 +50,7 @@ const Reasons = () => {
             className='hidden xl:grid col-span-1 ml-20 items-center'>
                 <img src={ArrowRight} alt="" />
             </motion.div>
-            <div dir='rtl' className='grid justify-center lg:justify-normal col-span-6 lg:col-span-3'>
+            <div dir='rtl' className='my-11 lg:my-0 grid justify-center lg:justify-normal col-span-6 lg:col-span-3'>
                     <div className='grid grid-cols-4 grid-rows-3 gap-4 max-w-[500px] max-h-[340px]'>
                     <div className='row-span-3 col-span-2'>
                         <img className='w-full h-full object-cover rounded-lg shadow-md' src={img1} alt="" />

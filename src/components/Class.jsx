@@ -20,15 +20,15 @@ const Class = () => {
     return ( 
         
 
-        <section id="classes" className="overflow-hidden items-center lg:items-start p-5 mb-24 flex gap-y-11 flex-col-reverse lg:grid lg:grid-cols-6  lg:gap-y-0">
+        <section  id="classes" className="overflow-hidden items-center lg:items-start p-5 mb-24 grid gap-y-11  grid-cols-6  lg:gap-y-0 md:pt-16 lg:pt-0">
         
-                <div className="grid justify-center lg:justify-normal col-span-3 xl:col-span-2">
-                    <div className="grid justify-start items-start pl-7">
+                <div className="order-last lg:order-first grid justify-center lg:justify-normal col-span-6 lg:col-span-3 xl:col-span-2 ">
+                    <div className="grid justify-start items-start lg:pl-7">
                         <Swiper
                             effect={'cards'}
                             grabCursor={true}
                             modules={[EffectCards]}
-                            className="mySwiper w-[190px] h-[190px] sm:w-[300px] sm:h-[340px]"
+                            className="mySwiper w-[190px] h-[190px] -sm:w-[250px] -sm:h-[300px] sm:w-[300px] sm:h-[340px]"
                         >
                             <SwiperSlide>
                                 <img src={Img1} alt="" className='absolute inset-0 bg-cover bg-center z-0 w-full h-full object-cover cursor-pointer mb-1 rounded-md' />
@@ -76,7 +76,6 @@ const Class = () => {
                     </div>
                 </div>
 
-
                 <motion.div 
                 whileHover = {{
                     scale: 1.1,
@@ -90,18 +89,19 @@ const Class = () => {
                 className="hidden xl:grid col-span-1 mr-24 items-center">
                     <img src={ArrowLeft} alt="" />
                 </motion.div>
-                <div className="col-span-3 xl:col-span-3 prose prose-slate pr-7">
-                    <h1 className='capitalize text-center sm:text-start font-black text-2xl sm:text-3xl text-slate-800 dark:text-slate-300'>our classes</h1>
-                    <p className="text-slate-800 dark:text-slate-300">We get lots of messeges about the classes actually, with people regularly asking us things like:</p>
+
+                <div className="text-center grid justify-self-center lg:justify-self-start lg:text-start col-span-6 lg:col-span-3 xl:col-span-3 prose prose-slate lg:pr-7">
+                    <h1 className='capitalize grid justify-self-center lg:justify-self-start text-center sm:text-start font-black text-2xl sm:text-3xl text-slate-800 dark:text-slate-300'>our classes</h1>
+                    <p className="text-slate-800 dark:text-slate-300 text-start">We get lots of messeges about the classes actually, with people regularly asking us things like:</p>
                     
                     <AnimationOnScroll animateIn="animate__shakeY" animateOut="animate__bounceOutRight">
                         <blockquote>
-                            <p className='my-5 capitalize text-secondary'>
+                            <p className='text-start my-5 capitalize text-secondary'>
                             Why should we attend these classes? What classes are more <code>useful</code> for us? Will we get the desired result soon by participating in these classes?
                             </p>
                         </blockquote>
                     </AnimationOnScroll>
-                    <h4 className="text-slate-800 dark:text-slate-300 text-justify">
+                    <h4 className="text-slate-800 dark:text-slate-300 text-start">
                     By hovering over each photo, you can read the details of each class and get answers to your questions.
                     </h4>
                 </div>
