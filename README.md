@@ -18,6 +18,7 @@ A React fitness app
   <li>React Horizontal Scrolling</li>
   <li>Tailwind typography plugin</li>
   <li>Axios Library</li>
+  <li>React-animation-on-scroll</li>
 </ul>
 
 ## The reason for developing this app
