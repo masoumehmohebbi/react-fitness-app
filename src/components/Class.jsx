@@ -13,13 +13,11 @@ import ArrowLeft from "../assets/icons/Arrow.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import '../styles.css'
 import { EffectCards } from 'swiper/modules';
 
 const Class = () => {
     return ( 
         
-
         <section  id="classes" className="overflow-hidden items-center lg:items-start p-5 mb-24 grid gap-y-11  grid-cols-6  lg:gap-y-0 md:pt-16 lg:pt-0">
         
                 <div className="order-last lg:order-first grid justify-center lg:justify-normal col-span-6 lg:col-span-3 xl:col-span-2 ">
@@ -30,46 +28,52 @@ const Class = () => {
                             modules={[EffectCards]}
                             className="mySwiper w-[190px] h-[190px] -sm:w-[250px] -sm:h-[300px] sm:w-[300px] sm:h-[340px]"
                         >
-                            <SwiperSlide>
+                            <SwiperSlide 
+                            className='flex items-center justify-center rounded-2xl text-sm font-bold text-white'>
                                 <img src={Img1} alt="" className='absolute inset-0 bg-cover bg-center z-0 w-full h-full object-cover cursor-pointer mb-1 rounded-md' />
                                 <span className="flex gap-y-4 flex-col opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 justify-center items-center text-slate-700 bg-[#f5d0feda]">
-                                    <h1 className='text-sm font-bold uppercase'>Weight training class</h1>
-                                    <p className='text-sm p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
+                                    <h1 className='-sm:text-sm text-xs font-bold uppercase'>Weight training class</h1>
+                                    <p className='-sm:text-sm text-xs p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
                                 </span>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            <SwiperSlide
+                             className='flex items-center justify-center rounded-2xl text-sm font-bold text-white'>
                                 <img src={Img2} alt="" className='absolute inset-0 bg-cover bg-center z-0 w-full h-full object-cover cursor-pointer mb-1 rounded-md' />
                                 <span className="flex gap-y-4 flex-col opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 justify-center items-center text-slate-700 bg-[#f5d0feda]">
-                                    <h1 className='text-sm font-bold uppercase'>Weight training class</h1>
-                                    <p className='text-sm p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
+                                    <h1 className='-sm:text-sm text-xs font-bold uppercase'>Weight training class</h1>
+                                    <p className='-sm:text-sm text-xs p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
                                 </span>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            <SwiperSlide
+                             className='flex items-center justify-center rounded-2xl text-sm font-bold text-white'>
                                 <img src={Img3} alt="" className='absolute inset-0 bg-cover bg-center z-0 w-full h-full object-cover cursor-pointer mb-1 rounded-md' />
                                 <span className="flex gap-y-4 flex-col opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 justify-center items-center text-slate-700 bg-[#f5d0feda]">
-                                    <h1 className='text-sm font-bold uppercase'>Weight training class</h1>
-                                    <p className='text-sm p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
+                                    <h1 className='-sm:text-sm text-xs font-bold uppercase'>Weight training class</h1>
+                                    <p className='-sm:text-sm text-xs p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
                                 </span>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            <SwiperSlide
+                             className='flex items-center justify-center rounded-2xl text-sm font-bold text-white'>
                                 <img src={Img4} alt="" className='absolute inset-0 bg-cover bg-center z-0 w-full h-full object-cover cursor-pointer mb-1 rounded-md' />
                                 <span className="flex gap-y-4 flex-col opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 justify-center items-center text-slate-700 bg-[#f5d0feda]">
-                                    <h1 className='text-sm font-bold uppercase'>Weight training class</h1>
-                                    <p className='text-sm p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
+                                    <h1 className='-sm:text-sm text-xs font-bold uppercase'>Weight training class</h1>
+                                    <p className='-sm:text-sm text-xs p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
                                 </span>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            <SwiperSlide
+                             className='flex items-center justify-center rounded-2xl text-sm font-bold text-white'>
                                 <img src={Img5} alt="" className='absolute inset-0 bg-cover bg-center z-0 w-full h-full object-cover cursor-pointer mb-1 rounded-md' />
                                 <span className="flex gap-y-4 flex-col opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 justify-center items-center text-slate-700 bg-[#f5d0feda]">
-                                    <h1 className='text-sm font-bold uppercase'>Weight training class</h1>
-                                    <p className='text-sm p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
+                                    <h1 className='-sm:text-sm text-xs font-bold uppercase'>Weight training class</h1>
+                                    <p className='-sm:text-sm text-xs p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
                                 </span>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            <SwiperSlide
+                             className='flex items-center justify-center rounded-2xl text-sm font-bold text-white'>
                                 <img src={Img6} alt="" className='absolute inset-0 bg-cover bg-center z-0 w-full h-full object-cover cursor-pointer mb-1 rounded-md' />
                                 <span className="flex gap-y-4 flex-col opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 justify-center items-center text-slate-700 bg-[#f5d0feda]">
-                                    <h1 className='text-sm font-bold uppercase'>Weight training class</h1>
-                                    <p className='text-sm p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
+                                    <h1 className='-sm:text-sm text-xs font-bold uppercase'>Weight training class</h1>
+                                    <p className='-sm:text-sm text-xs p-2 text-center'>stias architecto voluptas repellendus. Sint aliquam veritatis ipsam autem beatae error modi cumque.</p>
                                 </span>
                             </SwiperSlide>
                         </Swiper>
