@@ -15,6 +15,9 @@ A React fitness app
   <li>Framer motion</li>
   <li>Rapid api</li>
   <li>React Routers</li>
+  <li>React Horizontal Scrolling</li>
+  <li>Tailwind typography plugin</li>
+  <li>Axios Library</li>
 </ul>
 
 ## The reason for developing this app
