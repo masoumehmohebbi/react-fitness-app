@@ -7,11 +7,14 @@ import 'react-horizontal-scrolling-menu/dist/styles.css';
 import LeftArrowIcon from "../assets/icons/left-arrow.png"
 import RightArrowIcon from "../assets/icons/right-arrow.png"
 
+import { motion } from "framer-motion";
+
 function LeftArrow() {
   const {scrollPrev} = useContext(VisibilityContext);
 
   return (
-    <button className="pl-5" onClick={() => scrollPrev()}>
+    <button 
+    className="pl-5" onClick={() => scrollPrev()}>
       <img src={LeftArrowIcon} alt="right-arrow" />
     </button>
   );
@@ -20,7 +23,8 @@ function LeftArrow() {
 function RightArrow() {
   const {scrollNext} = useContext(VisibilityContext);
   return (
-    <button className="pr-5" onClick={() => scrollNext()}>
+    <button 
+      className="pr-5" onClick={() => scrollNext()}>
       <img src={RightArrowIcon} alt="left-arrow" />
     </button>
   );

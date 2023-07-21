@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 import img1 from '../assets/images/fit-woman1.jpg'
 import img2 from '../assets/images/fit-woman2.jpg'
 import img3 from '../assets/images/fit-woman3.jpg'
@@ -30,9 +32,20 @@ const Reasons = () => {
                     </li>
                 </ul>
             </div>
-            <div className='hidden xl:grid col-span-1 ml-20 items-center'>
+
+            <motion.div 
+             whileHover = {{
+                scale: 1.1,
+                originX: -3.1
+                
+            }}
+            transition = {{
+                type:'spring',
+                stiffness:'300'
+            }}
+            className='hidden xl:grid col-span-1 ml-20 items-center'>
                 <img src={ArrowRight} alt="" />
-            </div>
+            </motion.div>
             <div dir='rtl' className='grid justify-center lg:justify-normal col-span-6 lg:col-span-3'>
                     <div className='grid grid-cols-4 grid-rows-3 gap-4 max-w-[500px] max-h-[340px]'>
                     <div className='row-span-3 col-span-2'>

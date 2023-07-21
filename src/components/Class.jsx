@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 
 import Img1 from "../assets/images/image1.png"
 import Img2 from "../assets/images/image2.png"
@@ -73,9 +74,20 @@ const Class = () => {
                 </div>
             </div>
 
-            <div className="hidden xl:grid col-span-1 mr-24 items-center">
+
+            <motion.div 
+            whileHover = {{
+                scale: 1.1,
+                originX: 3.1
+                
+            }}
+            transition = {{
+                type:'spring',
+                stiffness:'300'
+            }}
+            className="hidden xl:grid col-span-1 mr-24 items-center">
                 <img src={ArrowLeft} alt="" />
-            </div>
+            </motion.div>
 
             <div className="col-span-3 xl:col-span-3 prose prose-slate pr-7">
                 <h1 className='capitalize text-center sm:text-start font-black text-2xl sm:text-3xl text-slate-800 dark:text-slate-300'>our classes</h1>
