@@ -11,6 +11,9 @@ export default {
       colors: {
         'primary':'#06b6d4',
         'secondary':'#c026d3'
+      },
+      screens: {
+        '-sm': '450px',
       }
     },
   },
