@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import img1 from '../assets/images/fit-woman1.jpg'
 import img2 from '../assets/images/fit-woman2.jpg'
@@ -13,24 +14,27 @@ const Reasons = () => {
             <div className='grid justify-center lg:justify-normal col-span-6 lg:col-span-3 xl:col-span-2'>
                 <h3 className='text-primary font-bold text-xl'>Some Reasons</h3>
                 <h1 className='my-4 capitalize font-black text-2xl sm:text-3xl text-slate-800 dark:text-slate-300'>Why choose us?</h1>
-                <ul className='flex flex-col gap-y-4 mt-12 capitalize'>
-                    <li className='flex items-center text-lg dark:text-slate-300 text-slate-800'>
-                        <img src={Dumbell} className='w-6 h-6 mr-4 object-cover' alt="" />
-                        one free program for new member
-                    </li>
-                    <li className='flex items-center text-lg dark:text-slate-300 text-slate-800'>
-                        <img src={Dumbell} className='w-6 h-6 mr-4 object-cover' alt="" />
-                        reliable partners
-                    </li>
-                    <li className='flex items-center text-lg dark:text-slate-300 text-slate-800'>
-                        <img src={Dumbell} className='w-6 h-6 mr-4 object-cover' alt="" />
-                        over 140+EXPERT COACHES
-                    </li>
-                    <li className='flex items-center text-lg dark:text-slate-300 text-slate-800'>
-                        <img src={Dumbell} className='w-6 h-6 mr-4 object-cover' alt="" />
-                        train smarter and faster than before
-                    </li>
-                </ul>
+                <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+                    <ul className='flex flex-col gap-y-4 mt-12 capitalize'>
+                        <li className='flex items-center text-lg dark:text-slate-300 text-slate-800'>
+                            <img src={Dumbell} className='w-6 h-6 mr-4 object-cover' alt="" />
+                            one free program for new member
+                        </li>
+                        <li className='flex items-center text-lg dark:text-slate-300 text-slate-800'>
+                            <img src={Dumbell} className='w-6 h-6 mr-4 object-cover' alt="" />
+                            reliable partners
+                        </li>
+                        <li className='flex items-center text-lg dark:text-slate-300 text-slate-800'>
+                            <img src={Dumbell} className='w-6 h-6 mr-4 object-cover' alt="" />
+                            over 140+EXPERT COACHES
+                        </li>
+                        <li className='flex items-center text-lg dark:text-slate-300 text-slate-800'>
+                            <img src={Dumbell} className='w-6 h-6 mr-4 object-cover' alt="" />
+                            train smarter and faster than before
+                        </li>
+                    </ul>
+                </AnimationOnScroll>
+                
             </div>
 
             <motion.div 

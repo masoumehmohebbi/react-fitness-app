@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FetchData, exerciseOptions } from "../../utils/fetchData";
 import HorizontalScrollBar from "./HorizontalScrollBar";
-import { motion } from "framer-motion";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 // eslint-disable-next-line react/prop-types
 const SearchExercises = ({setExercise, bodyPart, setBodypart}) => {
@@ -40,7 +40,9 @@ const SearchExercises = ({setExercise, bodyPart, setBodypart}) => {
     return ( 
         <>
             <section className="flex flex-col items-center gap-y-12 p-5 w-full">
-                <h1 className="font-black text-2xl sm:text-3xl text-center text-slate-800 dark:text-slate-300">Awesome Exercises You<br/> Should Know</h1>
+                <AnimationOnScroll animateIn="animate__rubberBand">
+                    <h1 className="font-black text-2xl sm:text-3xl text-center text-slate-800 dark:text-slate-300">Awesome Exercises You<br/> Should Know</h1>
+                </AnimationOnScroll>
                 <div className="flex items-center sm:items-start w-11/12 sm:w-[80%] flex-col sm:flex-row gap-y-2 sm:gap-y-0">
                     <input 
                     value={search} onChange={(e)=> setSearch(e.target.value.toLocaleLowerCase())} 

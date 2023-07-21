@@ -1,18 +1,15 @@
 import HeroBannerImg from '../assets/images/banner.png'
-
 import { motion} from 'framer-motion';
 
-const HeroBanner = () => {
-      
+const HeroBanner = () => {  
  
     return ( 
         <section className='grid grid-cols-4 w-full justify-between pb-5'>
-            <div 
-            // initial = {{y: '300px'}}
-            // animate = {{y:'0'} }
-            // transition = {{ duration: 0.9}}
-
-            className='grid col-span-4 lg:col-span-2'>
+            <motion.div 
+                initial = {{y: '300px'}}
+                animate = {{y: '0'}}
+                transition = {{ duration: 1.2}}
+                className='grid col-span-4 lg:col-span-2'>
                 <div className='flex items-center justify-center flex-col gap-y-7'>
                     <h1 className='font-black text-2xl sm:text-3xl text-primary'>Fitness Club</h1>
                     <h2 className='text-3xl sm:text-4xl font-black text-slate-800 dark:text-slate-300'>Sweat, Smile <br/> And Repeat</h2>
@@ -23,7 +20,7 @@ const HeroBanner = () => {
                             <motion.div   
                                 initial = {{x: '-100vw'}}
                                 animate = {{x: '0'}}
-                                transition = {{delay:0.9, type:'spring' ,stiffness:120}}
+                                transition = {{delay:1.1, type:'spring' ,stiffness:120}}
 
                                 >
                                 <a href="#exercises" 
@@ -35,12 +32,12 @@ const HeroBanner = () => {
                    </div>
                     
                 </div>
-            </div>
+            </motion.div>
 
            <motion.div 
-        //    initial = {{y: '300px'}}
-        //    animate = {{y: '0'}}
-        //    transition = {{ duration: 0.9}}
+           initial = {{y: '300px'}}
+           animate = {{y: '0'}}
+           transition = {{ duration: 1.2}}
 
            className='col-span-2 hidden lg:grid justify-end'>
                 <img src={HeroBannerImg} alt="banner" className='rounded-md overflow-auto' />
