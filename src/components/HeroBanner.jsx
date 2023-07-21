@@ -33,6 +33,7 @@ const HeroBanner = () => {
                             </motion.div>
                     
                    </div>
+                    
                 </div>
             </div>
 

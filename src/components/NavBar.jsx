@@ -6,12 +6,17 @@ import darkLogo from '../assets/images/dark-logo.png'
 import {BiSun, BiMoon, BiLaptop} from "react-icons/bi";
 import { useEffect, useState } from "react";
 
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll,useSpring } from "framer-motion";
 
 // eslint-disable-next-line react/prop-types
 const NavBar = ({theme , setTheme}) => {
 
     const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+      });
 
       const [open,setOpen]=useState(false);
       const themeOptions = [
@@ -85,7 +90,7 @@ const NavBar = ({theme , setTheme}) => {
     return (
       <nav className='sticky top-0 left-0 w-full z-40'>
             <motion.div
-            style={{ scaleX: scrollYProgress }}
+            style={{ scaleX}}
             className='
             fixed top-0 left-0 right-0 h-1 dark:bg-secondary bg-primary origin-left '>
         
