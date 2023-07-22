@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { Link as Scroll } from 'react-scroll'
+
 
 import logo from "../assets/images/Logo.png"
 import darkLogo from '../assets/images/dark-logo.png'
@@ -134,50 +136,64 @@ const NavBar = ({theme , setTheme}) => {
                             </Link>
                         </motion.div>
                         
-                        <motion.a
-                        whileHover = {{
-                            scale: 1.2,
-                            originX: 0
-                            
-                        }}
-                        transition = {{
-                            type:'spring',
-                            stiffness:'300'
-                        }}
-                        href="#exercises" className="text-slate-800 dark:text-slate-300">Exercises</motion.a>
-                        
-                        <motion.a
-                        whileHover = {{
-                            scale: 1.2,
-                            originX: 0 
-                        }}
-                        transition = {{
-                            type:'spring',
-                            stiffness:'300'
-                        }}
-                        href="#classes" className="text-slate-800 dark:text-slate-300">Classes</motion.a>
-                        
-                        <motion.a
-                        whileHover = {{
+                        <motion.div
+                            whileHover = {{
                                 scale: 1.2,
                                 originX: 0
+                                
                             }}
                             transition = {{
                                 type:'spring',
                                 stiffness:'300'
-                            }}
-                        href="#reasons" className="text-slate-800 dark:text-slate-300">Reasons</motion.a>
+                            }}>
+                            <Scroll to="exercises" spy={true} smooth={true} offset={-150} duration={500} className="text-slate-800 cursor-pointer dark:text-slate-300" >
+                                Exercises
+                            </Scroll>
+                        </motion.div>
                         
-                        <motion.a
-                        whileHover = {{
-                            scale: 1.2,
-                            originX: 0
-                        }}
-                        transition = {{
-                            type:'spring',
-                            stiffness:'300'
-                        }}
-                        href="#contact-us" className="text-slate-800 dark:text-slate-300">Contact</motion.a>
+                        
+                        <motion.div
+                            whileHover = {{
+                                scale: 1.2,
+                                originX: 0
+                                
+                            }}
+                            transition = {{
+                                type:'spring',
+                                stiffness:'300'
+                            }}>
+                            <Scroll to="classes" spy={true} smooth={true} offset={-100} duration={500} className="text-slate-800 cursor-pointer dark:text-slate-300" >
+                                Classes
+                            </Scroll>
+                        </motion.div>
+                        <motion.div
+                            whileHover = {{
+                                scale: 1.2,
+                                originX: 0
+                                
+                            }}
+                            transition = {{
+                                type:'spring',
+                                stiffness:'300'
+                            }}>
+                            <Scroll to="reasons" spy={true} smooth={true} offset={-100} duration={500} className="text-slate-800 cursor-pointer dark:text-slate-300" >
+                                Reasons
+                            </Scroll>
+                        </motion.div>
+                        <motion.div
+                            whileHover = {{
+                                scale: 1.2,
+                                originX: 0
+                                
+                            }}
+                            transition = {{
+                                type:'spring',
+                                stiffness:'300'
+                            }}>
+                            <Scroll to="contact-us" spy={true} smooth={true} offset={50} duration={500} className="text-slate-800 cursor-pointer dark:text-slate-300" >
+                                Contacts
+                            </Scroll>
+                        </motion.div>
                     </div>
                 </div>
 
