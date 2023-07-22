@@ -7,6 +7,8 @@ import 'react-horizontal-scrolling-menu/dist/styles.css';
 import LeftArrowIcon from "../assets/icons/left-arrow.png"
 import RightArrowIcon from "../assets/icons/right-arrow.png"
 
+import ExerciseCard from './ExerciseCard'
+
 function LeftArrow() {
   const {scrollPrev} = useContext(VisibilityContext);
 
@@ -31,10 +33,11 @@ function RightArrow() {
 
 
 // eslint-disable-next-line react/prop-types
-const HorizontalScrollBar = ({data, setBodypart , bodyPart}) => {
+const HorizontalScrollBar = ({data, setBodypart , bodyPart, isBodyParts}) => {
     return ( 
       <ScrollMenu scrollContainerClassName="overflow-hidden w-full relative" LeftArrow={LeftArrow} RightArrow={RightArrow}>
-       {data.map(item => <div className="mr-[60px] w-full flex justify-evenly items-center" key={item}><BodyPart item={item} setBodypart={setBodypart} bodyPart={bodyPart}/></div>)}
+       {data.map(item => <div className="mr-[60px] w-full flex justify-evenly items-center" key={item}>
+        {isBodyParts ? <BodyPart item={item} setBodypart={setBodypart} bodyPart={bodyPart}/> : <ExerciseCard exercise={item}/> }</div>)}
       </ScrollMenu>
      );
 }

@@ -51,7 +51,11 @@ const SearchExercises = ({setExercise, bodyPart, setBodypart}) => {
                     className="w-1/2 text-sm sm:text-base sm:w-auto duration-500 ring-offset-[#fdf4ff] dark:ring-offset-slate-800 bg-primary sm:ml-3 hover:ring hover:ring-offset-2 hover:ring-primary text-white top-12 py-2 px-5 rounded-md">Search</button>
                 </div>
             </section>
-            <HorizontalScrollBar data={bodyParts} setBodypart={setBodypart} bodyPart={bodyPart}/>
+            <HorizontalScrollBar 
+            data={bodyParts} 
+            setBodypart={setBodypart} 
+            isBodyParts
+            bodyPart={bodyPart}/>
         </>
      );
 }
