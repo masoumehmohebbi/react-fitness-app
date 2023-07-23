@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import TargetIcon from '../assets/icons/target.png'
 import EquipmentIcon from '../assets/icons/equipment.png'
 import BodyPartIcon from '../assets/icons/body-part.png'
