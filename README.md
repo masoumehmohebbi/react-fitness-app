@@ -6,7 +6,7 @@ A React fitness app
 
 ## Description
 One of the reasons I chose this application is my passion for fitness and it made me even more excited to develop this application.
-And also this is my first project with Api in reactJs. Working with Raid-api, Routers was a challenge for me.
+And also this is my first project with Api in reactJs. Working with Raid-api, Routers, Axios was a challenge for me.
 
 ## Technologies used in this App
 
