@@ -7,14 +7,14 @@ const ExerciseVideos = ({exerciseVideos , name}) => {
         <section className="p-5 py-11">
             <h2 className="text-xl font-bold text-slate-800 py-11 dark:text-slate-300">watch <span className="text-secondary">{name}</span> exercise videos</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-self-center w-full justify-evenly gap-y-5 md:gap-y-9 gap-x-3 items-center">
-                {exerciseVideos?.slice(0,3).map((item , index) => (
+            <div className="px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-self-center justify-evenly gap-y-5 md:gap-y-9 md:gap-x-3 items-center">
+                {exerciseVideos?.slice(0,4).map((item , index) => (
                     <a key={index} 
-                        className="shadow-lg dark:shadow-primary dark:shadow-sm rounded-md pb-3 w-[340px] h-[320px] justify-self-center flex items-center flex-col overflow-hidden" 
+                        className="shadow-sm shadow-secondary dark:shadow-primary dark:shadow-sm rounded-md pb-3 w-[290px] h-[320px] justify-self-center flex items-center flex-col overflow-hidden" 
                         href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
                         target="_blank" rel="noreferrer">
 
-                        <div className="max-w-[400px] w-[340px] max-h-[400px]p-2">
+                        <div className="w-full h-auto p-2">
                             <img className="w-full h-full object-cover rounded-md " src={item.video.thumbnails[0].url} alt={item.video.title} />
                         </div>
 

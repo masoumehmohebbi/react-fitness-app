@@ -31,8 +31,8 @@ const ExerciseCard = ({exercise}) => {
                     
                     <img src={exercise.gifUrl} alt={exercise.name} loading="lazy" className="rounded-xl w-[300px] h-auto" />
                     <div className="flex gap-x-3 mt-4">
-                        <button className="text-white rounded-lg bg-secondary p-2">{exercise.bodyPart}</button>
-                        <button className="text-white rounded-lg bg-primary p-2">Target:{ exercise.target}</button>
+                        <button className="text-white text-sm md:text-base rounded-lg bg-secondary p-2">{exercise.bodyPart}</button>
+                        <button className="text-white text-sm md:text-base rounded-lg bg-primary p-2">Target:{ exercise.target}</button>
                         {/* <button className="rounded-lg border-2 border-primary p-2">Equipment:{exercise.equipment}</button> */}
                     </div>
                     <p className="mt-3 font-medium text-slate-800">{exercise.name}</p>
