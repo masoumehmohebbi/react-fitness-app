@@ -23,6 +23,7 @@ And also this is my first project with Api in reactJs. Working with Raid-api, Ro
   <li>Tailwind typography plugin</li>
   <li>Axios Library</li>
   <li>React-animation-on-scroll</li>
+  <li>Flex & Grid</li>
 </ul>
 
 ## Development setup
