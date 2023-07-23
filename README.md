@@ -4,6 +4,10 @@ A React fitness app
   <img src="https://github.com/masoumehmohebbi/react-fitness-app/blob/main/react-fitness-app.PNG"/>
 </figure>
 
+## Description
+One of the reasons I chose this application is my passion for fitness and it made me even more excited to develop this application.
+And also this is my first project with Api in reactJs. Working with Raid-api, Routers was a challenge for me.
+
 ## Technologies used in this App
 
 <ul>
@@ -20,9 +24,6 @@ A React fitness app
   <li>Axios Library</li>
   <li>React-animation-on-scroll</li>
 </ul>
-
-## The reason for developing this app
-This is my first project with Api in reactJs. Working with with api, Routers was a challenge for me.
 
 ## Development setup
 
