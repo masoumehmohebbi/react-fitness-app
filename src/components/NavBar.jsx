@@ -132,7 +132,7 @@ const NavBar = ({theme , setTheme}) => {
                             stiffness:'300'
                         }}
                         >
-                            <Link to="/"><span className=" border-b-4 border-primary text-slate-800 dark:text-slate-300">Home</span>
+                            <Link to="/"><span className={`border-b-4 border-primary text-slate-800 dark:text-slate-300`}>Home</span>
                             </Link>
                         </motion.div>
                         
@@ -151,7 +151,6 @@ const NavBar = ({theme , setTheme}) => {
                             </Scroll>
                         </motion.div>
                         
-                        
                         <motion.div
                             whileHover = {{
                                 scale: 1.2,
@@ -166,6 +165,7 @@ const NavBar = ({theme , setTheme}) => {
                                 Classes
                             </Scroll>
                         </motion.div>
+
                         <motion.div
                             whileHover = {{
                                 scale: 1.2,
@@ -180,6 +180,7 @@ const NavBar = ({theme , setTheme}) => {
                                 Reasons
                             </Scroll>
                         </motion.div>
+
                         <motion.div
                             whileHover = {{
                                 scale: 1.2,
