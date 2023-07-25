@@ -132,7 +132,7 @@ const NavBar = ({theme , setTheme}) => {
                             stiffness:'300'
                         }}
                         >
-                            <Link to="/" className="text-slate-800 cursor-pointer border-b-4 border-primary" >
+                            <Link to="/" className="text-slate-800 lg:dark:text-slate-300 cursor-pointer border-b-4 border-primary" >
                                 Home
                             </Link>
                         </motion.div>
@@ -148,7 +148,7 @@ const NavBar = ({theme , setTheme}) => {
                                 stiffness:'300'
                             }}>
                             <Scroll to="exercises" spy={true} smooth={true} offset={-150} duration={500} 
-                            className="text-slate-800 cursor-pointer " >
+                            className="text-slate-800 cursor-pointer lg:dark:text-slate-300" >
                                 Exercises
                             </Scroll>
                         </motion.div>
@@ -163,7 +163,7 @@ const NavBar = ({theme , setTheme}) => {
                                 stiffness:'300'
                             }}>
                             <Scroll to="classes" spy={true} smooth={true} offset={-100} duration={500} 
-                            className="text-slate-800 cursor-pointer" >
+                            className="text-slate-800 cursor-pointer lg:dark:text-slate-300" >
                                 Classes
                             </Scroll>
                         </motion.div>
@@ -178,7 +178,7 @@ const NavBar = ({theme , setTheme}) => {
                                 stiffness:'300'
                             }}>
                             <Scroll to="reasons" spy={true} smooth={true} offset={-100} duration={500} 
-                            className="text-slate-800 cursor-pointer" >
+                            className="text-slate-800 cursor-pointer lg:dark:text-slate-300" >
                                 Reasons
                             </Scroll>
                         </motion.div>
@@ -193,7 +193,7 @@ const NavBar = ({theme , setTheme}) => {
                                 stiffness:'300'
                             }}>
                             <Scroll to="contact-us" spy={true} smooth={true} offset={50} duration={500} 
-                            className="text-slate-800 cursor-pointer" >
+                            className="text-slate-800 cursor-pointer lg:dark:text-slate-300" >
                                 Contacts
                             </Scroll>
                         </motion.div>
