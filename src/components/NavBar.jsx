@@ -119,9 +119,9 @@ const NavBar = ({theme , setTheme}) => {
                     </motion.div>
 
                     <div className={`flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row lg:items-center 
-                    lg:pb-0 pb-12 absolute lg:static bg-[#fdf4ff] lg:bg-transparent lg:z-auto z-[-1]
+                    lg:pb-0 pb-12 absolute lg:static bg-[#fdf4ff]  lg:bg-transparent lg:z-auto z-[-1]
                     left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in lg:gap-x-10
-                    text-[22px] ${open ? 'pt-2 top-[70px] opacity-100':'top-[-490px]'} lg:opacity-100 opacity-0`}>
+                    text-xl md:text-[22px] ${open ? 'pt-2 top-[70px] opacity-100':'top-[-490px]'} lg:opacity-100 opacity-0`}>
                         <motion.div
                         whileHover = {{
                             scale: 1.2,
@@ -132,7 +132,7 @@ const NavBar = ({theme , setTheme}) => {
                             stiffness:'300'
                         }}
                         >
-                            <Link to="/" className="text-slate-800 cursor-pointer dark:text-slate-300 border-b-4 border-primary" >
+                            <Link to="/" className="text-slate-800 cursor-pointer border-b-4 border-primary" >
                                 Home
                             </Link>
                         </motion.div>
@@ -148,7 +148,7 @@ const NavBar = ({theme , setTheme}) => {
                                 stiffness:'300'
                             }}>
                             <Scroll to="exercises" spy={true} smooth={true} offset={-150} duration={500} 
-                            className="text-slate-800 cursor-pointer dark:text-slate-300" >
+                            className="text-slate-800 cursor-pointer " >
                                 Exercises
                             </Scroll>
                         </motion.div>
@@ -163,7 +163,7 @@ const NavBar = ({theme , setTheme}) => {
                                 stiffness:'300'
                             }}>
                             <Scroll to="classes" spy={true} smooth={true} offset={-100} duration={500} 
-                            className="text-slate-800 cursor-pointer dark:text-slate-300" >
+                            className="text-slate-800 cursor-pointer" >
                                 Classes
                             </Scroll>
                         </motion.div>
@@ -178,7 +178,7 @@ const NavBar = ({theme , setTheme}) => {
                                 stiffness:'300'
                             }}>
                             <Scroll to="reasons" spy={true} smooth={true} offset={-100} duration={500} 
-                            className="text-slate-800 cursor-pointer dark:text-slate-300" >
+                            className="text-slate-800 cursor-pointer" >
                                 Reasons
                             </Scroll>
                         </motion.div>
@@ -193,7 +193,7 @@ const NavBar = ({theme , setTheme}) => {
                                 stiffness:'300'
                             }}>
                             <Scroll to="contact-us" spy={true} smooth={true} offset={50} duration={500} 
-                            className="text-slate-800 cursor-pointer dark:text-slate-300" >
+                            className="text-slate-800 cursor-pointer" >
                                 Contacts
                             </Scroll>
                         </motion.div>
