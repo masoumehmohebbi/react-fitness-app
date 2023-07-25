@@ -5,7 +5,7 @@ const NotFound = () => {
     return ( 
         <section className='flex items-center flex-col gap-y-11 py-11'>
             <h1 className='capitalize text-3xl text-primary font-black'>page not found</h1>
-            <p className='capitalize'>we cannot find the page you are looking for<br/>
+            <p className='capitalize dark:text-slate-300'>we cannot find the page you are looking for<br/>
             you can either return to the previous page, visit the homepage.
             </p>
 
