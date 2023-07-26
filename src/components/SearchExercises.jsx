@@ -43,12 +43,12 @@ const SearchExercises = ({setExercise, bodyPart, setBodypart}) => {
                 <AnimationOnScroll animateIn="animate__rubberBand">
                     <h1 className="font-black text-2xl sm:text-3xl text-center text-slate-800 dark:text-slate-300">Awesome Exercises You<br/> Should Know</h1>
                 </AnimationOnScroll>
-                <div className="flex items-center sm:items-start w-11/12 sm:w-[80%] flex-col sm:flex-row gap-y-2 sm:gap-y-0">
+                <div className="flex items-center sm:items-start w-full sm:w-[80%]  sm:flex-row gap-y-2 sm:gap-y-0">
                     <input 
                     value={search} onChange={(e)=> setSearch(e.target.value.toLocaleLowerCase())} 
                     type="text" placeholder="Search Exercises" />
                     <button onClick={searchHandler} 
-                    className="w-1/2 text-sm sm:text-base sm:w-auto duration-500 ring-offset-[#fdf4ff] dark:ring-offset-slate-800 bg-primary sm:ml-3 hover:ring hover:ring-offset-2 hover:ring-primary text-white top-12 py-2 px-5 rounded-md">Search</button>
+                    className="text-sm sm:text-base duration-500 ring-offset-[#fdf4ff] dark:ring-offset-slate-800 bg-primary ml-3 hover:ring hover:ring-offset-2 hover:ring-primary text-white top-12 py-3 sm:py-2 px-3 sm:px-5 rounded-md">Search</button>
                 </div>
             </section>
             <HorizontalScrollBar 
