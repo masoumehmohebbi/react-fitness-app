@@ -38,4 +38,4 @@ npm i
 npm run dev
 
 ## Author
-<a href="https://www.linkedin.com/in/masoume-mohebbi">Masoume mohebbi</a>
+<a href="https://www.linkedin.com/in/masoumemohebbi">Masoume mohebbi</a>
